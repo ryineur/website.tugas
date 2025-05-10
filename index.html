@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewa Hanfu Tiongkok</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad4f.js" crossorigin="anonymous"></script>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-fan"></i> Hanfu Jie</h1>
+
+      <!-- Hamburger Icon -->
+      <div id="hamburger-menu">
+        <i data-feather="menu"></i>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#koleksi">Koleksi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Tampil Anggun Dengan Nuansa <span>Tiongkok</span></h2>
+      <p>Sewa hanfu untuk foto prewedding, festival budaya, dan acara spesial lainnya.</p>
+      <button onclick="showAlert()">Beranda</button>
+    </div>
+  </section>
+
+  <!-- Koleksi Section -->
+  <section id="koleksi" class="collection">
+    <h2>Koleksi Hanfu</h2>
+    <div class="items">
+      <div class="item-card">
+        <img src="img/img.wed.pgn.avif" alt="Hanfu Wedding" />
+        <h3>Hanfu Wedding</h3>
+        <p>Rp 450.000 / hari</p>
+        <button onclick="order('Paket A')">
+          <i class="fas fa-shopping-cart"></i> Sewa
+        </button>
+      </div>
+      <div class="item-card">
+        <img src="img/img2.jpg.jpg" alt="Hanfu Festival" />
+        <h3>Hanfu Festival</h3>
+        <p>Rp 180.000 / hari</p>
+        <button onclick="order('Paket B')">
+          <i class="fas fa-shopping-cart"></i> Sewa
+        </button>
+      </div>
+      <div class="item-card">
+        <img src="img/img3.jpg" alt="Hanfu Simple" />
+        <h3>Hanfu Simple</h3>
+        <p>Rp 150.000 / hari</p>
+        <button onclick="order('Paket C')">
+          <i class="fas fa-shopping-cart"></i> Sewa
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami Section -->
+<section id="tentang" class="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>
+        <strong>Hanfu Jie</strong> adalah penyedia jasa sewa kostum Hanfu khas Tiongkok yang menghadirkan keanggunan budaya oriental untuk kebutuhan prewedding, festival budaya, sesi foto, dan acara spesial lainnya.
+      </p>
+      <p>
+        Kami berkomitmen memberikan layanan berkualitas, koleksi lengkap, dan pelayanan ramah. Visi kami adalah memperkenalkan pesona Hanfu kepada masyarakat Indonesia dengan harga terjangkau dan kualitas terbaik.
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p><i class="fas fa-phone-alt"></i> 0882-9848-8304</p>
+    <p><i class="fas fa-envelope"></i> @dehanfu.jie</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 project uts web client development
+      <span>syahrin</span>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    feather.replace();
+
+    function showAlert() {
+      alert("Silakan pilih kostum Hanfu yang ingin Anda sewa.");
+    }
+
+    function order(item) {
+      alert("Anda memilih menyewa: " + item + "\nHubungi kami untuk proses pemesanan.");
+    }
+
+    const hamburger = document.getElementById("hamburger-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

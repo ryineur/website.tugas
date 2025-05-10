@@ -1,0 +1,268 @@
+/* ========== Global ========== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #7c0a0ac2;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background-image: url("../img/img.bag1.jpp.webp"); /* Ganti nama file sesuai kebutuhan */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 span {
+  color: #a52424c2;
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+}
+
+.hero button {
+  background-color: #8d1111c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #ad1414;
+}
+
+/* ========== Section Penutup (Closing) ========== */
+.closing-banner {
+  background-image: url("../img/img.bag1.jpp.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* ========== Koleksi ========== */
+.collection {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.collection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.item-card p {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.item-card button {
+  background-color: #571311;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-card button:hover {
+  background-color: #720c0c;
+}
+
+/* ========== Kontak ========== */
+.contact {
+  background-color: #571311;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.contact h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #571311;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ========== Hamburger Menu ========== */
+#hamburger-menu {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .item-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background-color: #2b0404;
+    width: 200px;
+    padding: 20px;
+    transition: right 0.3s ease;
+  }
+
+  nav ul.active {
+    right: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+}
+/* ========== Tentang Kami ========== */
+.about {
+  padding: 40px 20px;
+  background-color: #fff8f8;
+  text-align: center;
+  color: #333;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #7c0a0a;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
